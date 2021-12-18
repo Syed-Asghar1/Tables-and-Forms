@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tables and Forms</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <header>
+     <h1>Tables and forms</h1>
+    </header>
+
+    <section>
+      <h2>Tables</h2>
+
+      <table>
+
+        <caption>Top 3 favorite Things</caption>
+
+        <tr>
+          <th colspan="3">Top Favorites</th>
+        </tr>
+        <tr>
+          <th>Foods</th>
+          <th>Activities</th>
+          <th>Musicians</th>
+        </tr>
+
+        <tr>
+          <td>Ice cream</td>
+          <td>Cooking</td>
+          <td>Drake</td>
+        </tr>
+        
+        <tr>
+          <td>Cookies</td>
+          <td>Video games</td>
+          <td>Future</td>
+        </tr>
+
+        <tr>
+          <td>Chips</td>
+          <td>Reading</td>
+          <td>JAY-Z</td>
+        </tr>
+
+      <tr>
+        <td rowspan="2">Combinded 2 rows 1 col</td>
+        <td>Combinded 2 rows col 2</td>
+        <td >Combinded 2 rows col 3</td>
+      </tr>
+      <tr>
+        <td>Combinded 2 rows col 2</td>
+        <td>Combinded 2 rows col 3</td>
+      </tr>
+
+      </table>
+    </section>
+
+    <section>
+      <h2>Forms</h2>
+      <form>
+        <fieldset>
+        <legend>Basic User Data:</legend>
+
+        <label for="name">Name</label>
+        <input placeholder="Enter your name" type="text" id="name" required>
+        <br>
+
+        <label for="height">Height</label>
+        <input placeholder="Enter your height" type="text" id="height" required>
+        <br>
+
+        <label for="password">Password</label>
+        <input placeholder="Enter your password" type="password" id="password" required>
+        <br>
+
+        <label for="super">Superpowers</label>
+        <select id= "super" name="super">
+          <option value="Blank">--Please chose from below--</option>
+          <option value="mind">Mind reading</option>
+          <option value="Flying">Flying</option>
+          <option value="Invisibility">Invisibility</option>
+          <option value="strong">Strength</option>
+        <select>
+        <br>
+
+        <label for="email">Email</label>
+        <input placeholder="Enter your email" type="email" id="email" required>
+        <br>
+
+          <label for="email">Month Picker</label>
+        <input type="month" id="month" name="month" required>
+        <br>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Checkbox and buttons:</legend>
+        <p>Pick your 2 favorite meals:</p>
+        <input type="checkbox" id="breakfast" name="meal" value="breakfast"/>
+        <label for="brealfast">breakfast</label>
+        <br>
+
+        <input type="checkbox" id="lunch" name="meal" value="lunch"/>
+        <label for="lunch">lunch</label>
+        <br>
+
+        <input type="checkbox" id="diner" name="meal" value="diner"/>
+        <label for="diner">diner</label>
+        <br>
+
+        <p>Pick your 2 favorite language:</p>
+        <input type="radio" id="html" name="langlist" value="html"/>
+        <label for="html">HTML</label>
+        <br>
+
+        <input type="radio" id="css" name="langlist" value="css"/>
+        <label for="css">CSS</label>
+        <br>
+
+        <input type="radio" id="js" name="langlist" value="js"/>
+        <label for="js">Javascript</label>
+        <br>
+        </fieldset>
+        
+        <fieldset>
+        <legend>Ranges, Meters and Numbers:</legend>
+
+        <label for="range">Range (Slider)</label>
+        <input type="range" id="range" name="range" min="0" max="100" value="25"/>
+        <br>
+
+        <label for="meter">Meter (No Slider)</label>
+        <meter id="meter" name="range" min="0" max="100" value="25">25 out of 100</meter>
+        <br>
+
+        <label for="meter">Rating</label>
+        <input type="number" id="rating" name="rating" min="0" max="100" step="5" value="50"/>
+        <br>
+        </fieldset>
+
+        </feildset>
+          <img src="https://media.istockphoto.com/photos/happy-holidays-text-with-holiday-evergreen-branches-and-red-berries-picture-id1333471675?b=1&k=20&m=1333471675&s=170667a&w=0&h=-fAWvoftfODSPkd1TDUJ3EbF6zYajFavhdpxHW1xyb4=" alt="Alternate text"/>
+          <figcaption>Caption attached to the image</ficaption>
+        <fieldst>
+        
+        <br>
+        <input type="submit" value"SUBMIT">
+        
+      </form>
+    </section>
+  </body>
+</html>

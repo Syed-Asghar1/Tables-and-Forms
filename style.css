@@ -1,0 +1,8 @@
+table,th,td
+{border:solid 1px blue;
+ border-collapse: seperate;
+ empty-cells:hide;}
+
+table
+{margin:auto;
+ text-align:center;}
